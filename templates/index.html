@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yasmim Almeida · Nail Designer · Jaguariúna</title>
+<meta name="description" content="Nail designer em Jaguariúna-SP. Gel na tips, fibra de vidro, molde F1 e banho de gel, com atendimento com hora marcada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6f3;--surf:#fff;--ink:#2b2024;--mut:#75666b;--ac:#9c4a63;--ac2:#7d3a4f;--gold:#a8895a;--line:#e7dcd6;--dk:#2b1d24}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--ink);font:300 16px/1.75 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.08;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500;display:block;margin-bottom:18px}
+.top{background:var(--dk);color:#e9dbe0;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 16px}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,246,243,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font:500 1.7rem 'Cormorant Garamond',serif;line-height:1}.logo small{display:block;font:400 .6rem Jost,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-top:5px}
+.links{display:flex;gap:34px;align-items:center;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}.links a{position:relative;padding:4px 0}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--ac);transition:.3s}.links a:not(.btn):hover::after,.links a.act::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ac);color:#fff;border:1px solid var(--ac);padding:15px 32px;font:400 .76rem Jost,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:.3s}
+.btn:hover{background:var(--ac2);border-color:var(--ac2)}.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.o:hover{background:var(--ink);color:#fff}
+.links .btn{padding:11px 22px}.burger{display:none;background:none;border:1px solid var(--line);width:42px;height:42px;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+.hero{padding:84px 0 96px}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.hero h1{font-size:clamp(3rem,6vw,5.2rem)}.hero h1 em{color:var(--ac);font-style:italic}
+.hero p.lead{color:var(--mut);font-size:1.08rem;margin:26px 0 38px;max-width:46ch}.cta{display:flex;gap:14px;flex-wrap:wrap}
+.facts{display:flex;gap:44px;margin-top:56px;padding-top:30px;border-top:1px solid var(--line)}
+.facts b{display:block;font:500 2rem 'Cormorant Garamond',serif;color:var(--ink);line-height:1}.facts span{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.frame{position:relative;max-width:440px;justify-self:end;width:100%}.frame::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid var(--gold);z-index:0}
+.frame img{position:relative;z-index:1;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 15%}
+section{padding:104px 0}.alt{background:var(--surf);border-block:1px solid var(--line)}
+.sh{max-width:620px;margin-bottom:56px}.sh h2{font-size:clamp(2.2rem,4.4vw,3.4rem)}.sh p{color:var(--mut);margin-top:14px}.sh.c{text-align:center;margin-inline:auto}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.svc div{padding:34px 30px 38px;border-top:1px solid var(--ink);border-right:1px solid var(--line)}.svc div:last-child{border-right:0}
+.svc span{font:500 .95rem 'Cormorant Garamond',serif;color:var(--gold);letter-spacing:.1em}.svc h3{font-size:1.75rem;margin:16px 0 10px}.svc p{color:var(--mut);font-size:.95rem}
+.ph{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}.ph .sh{margin:0}
+.tabs{display:flex;gap:30px;flex-wrap:wrap}.tabs button{background:none;border:0;border-bottom:1px solid transparent;padding:6px 0;font:400 .78rem Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);cursor:pointer;transition:.25s}
+.tabs button:hover{color:var(--ink)}.tabs button.on{color:var(--ink);border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.grid figure{aspect-ratio:4/5;overflow:hidden;cursor:zoom-in;background:var(--line);animation:pop .6s both}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}}.grid figure.hide{display:none}
+.grid img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform .8s cubic-bezier(.2,.7,.2,1)}.grid figure:hover img{transform:scale(1.05)}
+.count{color:var(--mut);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;margin-top:34px}.more{display:flex;margin:18px auto 0}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:84px;align-items:center}.about img{width:100%;aspect-ratio:1;object-fit:cover}
+.about h2{font-size:clamp(2.2rem,4vw,3.2rem);margin-bottom:22px}.about p{color:var(--mut);margin-bottom:16px;max-width:54ch}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:56px}.step{border-top:1px solid var(--line);padding-top:28px}.step span{font:500 3.2rem 'Cormorant Garamond',serif;color:var(--gold);line-height:1}
+.step h3{font-size:1.6rem;margin:14px 0 8px}.step p{color:var(--mut);font-size:.95rem}
+.book{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px}.info dl{margin-top:34px}.info dt{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:22px}.info dd{margin-top:4px}
+.info .btn{margin-top:32px}.form{background:var(--surf);border:1px solid var(--line);padding:44px}
+.form label{display:block;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:24px 0 10px}.form label:first-child{margin-top:0}
+.opts{display:flex;gap:8px;flex-wrap:wrap}.opts button{border:1px solid var(--line);background:transparent;color:var(--ink);padding:10px 18px;font:300 .9rem Jost,sans-serif;cursor:pointer;transition:.2s}
+.opts button:hover{border-color:var(--ink)}.opts button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.form input{width:100%;border:0;border-bottom:1px solid var(--line);background:transparent;padding:10px 0;font:300 1rem Jost,sans-serif;color:var(--ink);outline:0}.form input:focus{border-color:var(--ac)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:28px}.prev{margin-top:30px;padding:18px 20px;background:var(--bg);font-size:.88rem;color:var(--mut);border-left:2px solid var(--gold)}.form .btn{width:100%;margin-top:24px}
+.faq{max-width:780px;margin:0 auto}.faq details{border-bottom:1px solid var(--line);padding:22px 0}.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;font:500 1.4rem 'Cormorant Garamond',serif}
+.faq summary::after{content:"+";color:var(--gold);font-weight:300}.faq details[open] summary::after{content:"–"}.faq p{color:var(--mut);margin-top:12px;max-width:62ch}
+footer{background:var(--dk);color:#cdbcc3;padding:72px 0 30px}footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:56px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer .logo{color:#fff}footer p{font-size:.92rem;margin-top:18px;max-width:34ch}footer h4{font:400 .7rem Jost,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+footer li{list-style:none;font-size:.92rem;margin-bottom:8px}footer a:hover{color:#fff}.cp{font-size:.74rem;letter-spacing:.1em;padding-top:26px;text-align:center}
+.wa{position:fixed;right:22px;bottom:22px;z-index:55;width:54px;height:54px;border-radius:50%;background:#25a869;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:.3s}.wa:hover{transform:scale(1.08)}.wa svg{width:28px;fill:#fff}
+.lb{position:fixed;inset:0;background:rgba(20,12,16,.94);z-index:80;display:none;align-items:center;justify-content:center;padding:24px}.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:86vh}.lb button{position:absolute;background:none;color:#fff;border:1px solid rgba(255,255,255,.35);width:48px;height:48px;font-size:1.3rem;cursor:pointer}.lb .x{top:20px;right:20px}.lb .p{left:20px}.lb .n{right:20px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s}.rv.in{opacity:1;transform:none}
+.show{display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:stretch}
+.stage{position:relative;aspect-ratio:4/5;max-height:680px;width:100%;overflow:hidden;background:var(--line);cursor:zoom-in}
+.stage img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:opacity .35s,transform 6s linear}.stage img.out{opacity:0}.stage:hover img{transform:scale(1.04)}
+.ctr{position:absolute;left:20px;top:18px;color:#fff;font:500 .8rem Jost,sans-serif;letter-spacing:.2em;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.arr{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border:1px solid rgba(255,255,255,.7);background:rgba(20,12,16,.25);backdrop-filter:blur(4px);color:#fff;font-size:1.3rem;cursor:pointer;transition:.25s}.arr:hover{background:#fff;color:var(--ink)}.arr.l{left:16px}.arr.r{right:16px}
+.bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.3)}.bar i{display:block;height:100%;width:0;background:var(--gold);animation:pg 5s linear forwards}@keyframes pg{to{width:100%}}
+.stage.pause .bar i,.stage:hover .bar i{animation-play-state:paused}
+.side{display:flex;flex-direction:column;justify-content:space-between;gap:30px}.side h3{font-size:clamp(2rem,3.6vw,2.8rem)}.sd{color:var(--mut);font-size:.95rem;margin-top:12px;max-width:40ch}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.th{aspect-ratio:1;border:0;padding:0;background:var(--line);cursor:pointer;position:relative;overflow:hidden;opacity:.55;transition:.3s}
+.th img{width:100%;height:100%;object-fit:cover}.th:hover{opacity:1}.th.on{opacity:1;outline:2px solid var(--ac);outline-offset:2px}.th.hide{display:none}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:980px){.hero .wrap,.about,.book{grid-template-columns:1fr;gap:56px}.frame{justify-self:center;max-width:380px}.svc{grid-template-columns:1fr 1fr}.svc div:nth-child(2){border-right:0}.grid{grid-template-columns:repeat(3,1fr)}.steps{gap:30px}footer .g{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){section{padding:72px 0}.hero{padding:48px 0 64px}.burger{display:block}.links{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:20px;padding:26px 28px;background:var(--bg);border-bottom:1px solid var(--line)}nav.open .links{display:flex}
+.grid{grid-template-columns:repeat(2,1fr);gap:10px}.svc{grid-template-columns:1fr}.svc div{border-right:0}.steps{grid-template-columns:1fr}.row{grid-template-columns:1fr}.form{padding:28px 22px}.facts{gap:26px}footer .g{grid-template-columns:1fr}.frame::before{inset:14px -10px -14px 10px}}
+@media(max-width:980px){.show{grid-template-columns:minmax(0,1fr);gap:28px}.show>*{min-width:0}.stage{max-height:560px}}@media(max-width:700px){.thumbs{display:flex;overflow-x:auto;gap:8px;padding-bottom:6px;scroll-snap-type:x mandatory;position:relative}.th{flex:0 0 68px;scroll-snap-align:start}.arr{width:40px;height:40px}}
+.row .opt-gap,.row{margin-top:24px}
+@media(max-width:700px){
+.top{font-size:.66rem;letter-spacing:.1em;padding:8px 12px}.top span{display:none}
+.wrap{padding:0 20px}nav .wrap{height:68px}.links{top:68px;padding:22px 20px}.logo{font-size:1.5rem}
+.hero .cta{flex-direction:column}.hero .cta .btn,.acts .btn{width:100%}.acts{display:grid;grid-template-columns:1fr 1fr;gap:10px}.acts .btn{padding:15px 10px}
+.facts{justify-content:space-between;gap:12px}.facts b{font-size:1.7rem}.facts span{font-size:.62rem;letter-spacing:.1em}
+.svc div{padding:26px 0 28px}.sh{margin-bottom:36px}
+.ph{margin-bottom:28px}.tabs{flex-wrap:nowrap;overflow-x:auto;gap:22px;width:100%;padding-bottom:8px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs button{white-space:nowrap}
+.side{gap:20px}.sd{display:none}.stage{aspect-ratio:4/5}
+.about img{aspect-ratio:4/3;object-position:center 30%}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}.opts button{padding:12px 8px;font-size:.88rem}
+.form input{font-size:16px}.form{padding:26px 20px}.row{gap:0}.form .row>div+div label:first-child{margin-top:26px}
+.book{gap:40px}.info .btn{width:100%}
+footer{padding:52px 0 24px}footer .g{gap:34px}
+.wa{width:50px;height:50px;right:16px;bottom:16px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="top">Atendimento com hora marcada<span> · Jaguariúna-SP</span></div>
+<nav><div class="wrap"><a class="logo" href="#topo">Yasmim Almeida<small>Nail Designer</small></a>
+<div class="links"><a href="#servicos">Serviços</a><a href="#portfolio">Portfólio</a><a href="#sobre">Sobre</a><a href="#faq">Regras</a><a class="btn" href="#agendar">Agendar</a></div>
+<button class="burger" id="bg" aria-label="Menu">☰</button></div></nav>
+
+<header class="hero" id="topo"><div class="wrap">
+<div class="rv"><span class="eyebrow">Nail designer · Jaguariúna</span>
+<h1>Unhas com <em>elegância</em> e naturalidade.</h1>
+<p class="lead">Gel na tips, fibra de vidro, molde F1 e banho de gel. Cada atendimento é feito com hora marcada, para que você seja atendida com calma e atenção aos detalhes.</p>
+<div class="cta"><a class="btn" href="#agendar">Agendar horário</a><a class="btn o" href="#portfolio">Ver portfólio</a></div>
+<div class="facts"><div><b>4</b><span>Técnicas</span></div><div><b>630+</b><span>No Instagram</span></div><div><b>Hora</b><span>Marcada</span></div></div></div>
+<div class="frame rv"><img src="{{ url_for('static', filename='img/retrato.jpg') }}" alt="Yasmim Almeida, nail designer"></div>
+</div></header>
+
+<section id="servicos" class="alt"><div class="wrap"><div class="sh rv"><span class="eyebrow">Serviços</span><h2>Técnicas para cada estilo e rotina</h2></div>
+<div class="svc rv">
+<div><span>01</span><h3>Gel na tips</h3><p>Alongamento leve e natural, com tips coladas e acabamento em gel.</p></div>
+<div><span>02</span><h3>Fibra de vidro</h3><p>Alongamento resistente e flexível, com aspecto delicado.</p></div>
+<div><span>03</span><h3>Molde F1</h3><p>Formato personalizado e simétrico, esculpido para o seu desenho de mão.</p></div>
+<div><span>04</span><h3>Banho de gel</h3><p>Proteção e brilho para a unha natural, com mais durabilidade.</p></div>
+</div></div></section>
+
+<section id="portfolio"><div class="wrap"><div class="ph rv"><div class="sh"><span class="eyebrow">Portfólio</span><h2>Trabalhos recentes</h2></div>
+<div class="tabs" id="flt"><button class="on" data-f="all">Todos</button><button data-f="francesinha">Francesinha</button><button data-f="glitter">Glitter</button><button data-f="escuras">Cores fortes</button><button data-f="artes">Nail art</button></div></div>
+<div class="show rv">
+<div class="stage" id="stage"><img id="sImg" alt="Trabalho em destaque"><div class="ctr" id="sCtr"></div><button class="arr l" id="sp" aria-label="Anterior">‹</button><button class="arr r" id="sn" aria-label="Próximo">›</button><div class="bar"><i id="prog"></i></div></div>
+<div class="side"><div><span class="eyebrow" id="sCat"></span><h3 id="sTit"></h3><p class="sd">Toque em uma miniatura para trocar o destaque ou clique na foto grande para ampliar.</p></div>
+<div class="thumbs" id="thumbs">{% for g in galeria %}<button class="th" data-c="{{ g.cat }}" data-i="{{ loop.index0 }}" aria-label="Trabalho {{ loop.index }}"><img loading="lazy" alt="" src="{{ url_for('static', filename='img/' + g.arquivo) }}"></button>{% endfor %}</div>
+<div class="acts"><button class="btn o" id="open">Ampliar</button><a class="btn" id="want" target="_blank" rel="noopener" href="#">Quero um assim</a></div></div>
+</div></div></section>
+
+<section id="sobre" class="alt"><div class="wrap about"><img class="rv" src="{{ url_for('static', filename='img/yasmim.jpg') }}" alt="Yasmim Almeida"><div class="rv"><span class="eyebrow">Sobre</span><h2>Olá, eu sou a Yasmim</h2>
+<p>Sou nail designer em Jaguariúna e trabalho com unhas que valorizam a personalidade de cada cliente, com delicadeza e acabamento cuidadoso.</p>
+<p>Todo atendimento é feito com hora marcada, atenção aos detalhes e carinho do início ao fim.</p></div></div></section>
+
+<section><div class="wrap"><div class="sh c rv"><span class="eyebrow">Atendimento</span><h2>Como funciona</h2></div>
+<div class="steps rv"><div class="step"><span>1</span><h3>Escolha</h3><p>Defina técnica, formato e estilo no formulário ou chame direto no WhatsApp.</p></div>
+<div class="step"><span>2</span><h3>Confirme o horário</h3><p>Confirmo a disponibilidade e reservo o seu horário.</p></div>
+<div class="step"><span>3</span><h3>Seja atendida</h3><p>Chegue no horário combinado e saia com as unhas do jeito que você imaginou.</p></div></div></div></section>
+
+<section id="agendar" class="alt"><div class="wrap book">
+<div class="info rv"><span class="eyebrow">Agendamento</span><h2 style="font-size:clamp(2.2rem,4vw,3.2rem)">Reserve o seu horário</h2>
+<dl><dt>Endereço</dt><dd>{{ endereco }}</dd><dt>WhatsApp</dt><dd>(19) 98990-0890</dd><dt>Instagram</dt><dd>@{{ instagram }}</dd></dl>
+<a class="btn o" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query={{ maps_query }}">Abrir no Google Maps</a></div>
+<div class="form rv">
+<label>Serviço</label><div class="opts" data-k="serv"><button>Gel na tips</button><button>Fibra de vidro</button><button>Molde F1</button><button>Banho de gel</button></div>
+<label>Formato</label><div class="opts" data-k="form"><button>Amendoado</button><button>Stiletto</button><button>Bailarina</button><button>Curto natural</button></div>
+<label>Estilo</label><div class="opts" data-k="est"><button>Francesinha</button><button>Glitter</button><button>Cor lisa</button><button>Nail art</button></div>
+<div class="row"><div><label>Seu nome</label><input id="nome" placeholder="Como posso te chamar?"></div><div><label>Dia preferido</label><input id="dia" type="date"></div></div>
+<div class="prev" id="prev"></div><button class="btn" id="send">Enviar pelo WhatsApp</button></div></div></section>
+
+<section id="faq"><div class="wrap"><div class="sh c rv"><span class="eyebrow">Informações</span><h2>Regras de atendimento</h2></div>
+<div class="faq rv">
+<details open><summary>Cutículas</summary><p>Venha com as cutículas em dia ou avise no agendamento, para reservarmos o tempo necessário para o preparo.</p></details>
+<details><summary>Tolerância de atraso</summary><p>O atendimento é com hora marcada. Em caso de atraso, o serviço pode ser ajustado ou reagendado para não prejudicar as clientes seguintes.</p></details>
+<details><summary>Manutenção</summary><p>Mantenha a manutenção em dia para preservar a saúde das unhas e o acabamento do trabalho.</p></details>
+<details><summary>Pagamento</summary><p>Combine as formas de pagamento no agendamento pelo WhatsApp.</p></details></div></div></section>
+
+<footer><div class="wrap"><div class="g"><div><div class="logo">Yasmim Almeida<small>Nail Designer</small></div><p>Transformando suas unhas com elegância e naturalidade.</p></div>
+<div><h4>Navegação</h4><ul><li><a href="#servicos">Serviços</a></li><li><a href="#portfolio">Portfólio</a></li><li><a href="#agendar">Agendar</a></li><li><a href="#faq">Regras</a></li></ul></div>
+<div><h4>Contato</h4><ul><li><a target="_blank" rel="noopener" href="https://wa.me/{{ whatsapp }}">WhatsApp</a></li><li><a target="_blank" rel="noopener" href="https://instagram.com/{{ instagram }}">@{{ instagram }}</a></li><li>{{ endereco }}</li></ul></div></div>
+<div class="cp">© 2026 Yasmim Almeida · Nail Designer · Jaguariúna-SP</div></div></footer>
+
+<a class="wa" target="_blank" rel="noopener" href="https://wa.me/{{ whatsapp }}" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.800 1.500 5.600 1.500 7 0 12.600-5.600 12.600-12.500S23 3 16 3zm6.500 17.700c-.3.800-1.600 1.500-2.200 1.600-.6.100-1.300.1-2.100-.1-.5-.2-1.200-.4-2-.8-3.500-1.500-5.700-5-5.900-5.200-.2-.2-1.400-1.900-1.400-3.600s.9-2.500 1.200-2.900c.3-.3.700-.4.900-.4h.7c.2 0 .5-.1.800.6l1 2.500c.1.200.1.400 0 .6l-.4.600-.5.600c-.2.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.200 1 2.200 1.400 2.500 1.500.3.200.5.100.7-.1l.9-1.100c.2-.3.500-.2.800-.1l2.400 1.100c.3.200.5.300.6.400.1.200.1.800-.2 1.500z"/></svg></a>
+<div class="lb" id="lb"><button class="x" id="lx" aria-label="Fechar">✕</button><button class="p" id="lp" aria-label="Anterior">‹</button><img id="li" alt=""><button class="n" id="ln" aria-label="Próxima">›</button></div>
+
+<script>
+const $=s=>document.querySelector(s),TH=[...document.querySelectorAll('.th')];
+const G=TH.map(b=>b.querySelector('img').src),LAB={francesinha:'Francesinha',glitter:'Glitter',escuras:'Cores fortes',artes:'Nail art'};
+let list=[],pos=0,fl='all';const sImg=$('#sImg'),stage=$('#stage'),prog=$('#prog');
+function restart(){prog.style.animation='none';prog.offsetWidth;prog.style.animation=''}
+function go(p,first){pos=(p+list.length)%list.length;const i=list[pos],b=TH[i];
+const set=()=>{sImg.src=G[i];sImg.classList.remove('out')};if(first)set();else{sImg.classList.add('out');setTimeout(set,250)}
+$('#sCtr').textContent=String(pos+1).padStart(2,'0')+' / '+String(list.length).padStart(2,'0');
+$('#sCat').textContent=LAB[b.dataset.c];$('#sTit').textContent='Trabalho '+String(i+1).padStart(2,'0');
+TH.forEach(x=>x.classList.toggle('on',x===b));const th=$('#thumbs');if(th.scrollWidth>th.clientWidth)th.scrollTo({left:b.offsetLeft-th.clientWidth/2+b.clientWidth/2,behavior:'smooth'});
+$('#want').href='https://wa.me/{{ whatsapp }}?text='+encodeURIComponent('Olá, Yasmim! Vi o trabalho '+String(i+1).padStart(2,'0')+' ('+LAB[b.dataset.c]+') no seu portfólio e gostaria de algo parecido.');restart()}
+function filt(f){fl=f;list=[];TH.forEach((b,i)=>{const ok=f==='all'||b.dataset.c===f;b.classList.toggle('hide',!ok);if(ok)list.push(i)});go(0,true)}
+$('#flt').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#flt button').forEach(x=>x.classList.remove('on'));b.classList.add('on');filt(b.dataset.f)};
+$('#thumbs').onclick=e=>{const b=e.target.closest('.th');if(b)go(list.indexOf(+b.dataset.i))};
+$('#sp').onclick=e=>{e.stopPropagation();go(pos-1)};$('#sn').onclick=e=>{e.stopPropagation();go(pos+1)};
+prog.addEventListener('animationend',()=>{if(!lb.classList.contains('on'))go(pos+1)});
+let tx=0;stage.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;stage.classList.add('pause')},{passive:true});
+stage.addEventListener('touchend',e=>{stage.classList.remove('pause');const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)go(pos+(d<0?1:-1))});
+const lb=$('#lb'),li=$('#li'),show=()=>li.src=G[cur[idx]],step=d=>{idx=(idx+d+cur.length)%cur.length;show()};let cur=[],idx=0;
+function openLb(){cur=list.slice();idx=pos;show();lb.classList.add('on')}
+stage.onclick=openLb;$('#open').onclick=openLb;filt('all');
+$('#lp').onclick=()=>step(-1);$('#ln').onclick=()=>step(1);$('#lx').onclick=()=>lb.classList.remove('on');lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
+let sx=0;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)step(d<0?1:-1)});
+const sel={};
+document.querySelectorAll('.opts').forEach(o=>o.onclick=e=>{const b=e.target.closest('button');if(!b)return;const w=b.classList.contains('on');o.querySelectorAll('button').forEach(x=>x.classList.remove('on'));if(!w){b.classList.add('on');sel[o.dataset.k]=b.textContent}else delete sel[o.dataset.k];upd()});
+['nome','dia'].forEach(i=>$('#'+i).oninput=upd);
+function msg(){const n=$('#nome').value.trim(),v=$('#dia').value;let t='Olá, Yasmim! '+(n?'Me chamo '+n+' e ':'')+'gostaria de agendar um horário';
+const p=[];if(sel.serv)p.push('serviço: '+sel.serv);if(sel.form)p.push('formato: '+sel.form);if(sel.est)p.push('estilo: '+sel.est);
+if(p.length)t+=' ('+p.join(', ')+')';if(v){const [y,m,d]=v.split('-');t+=', de preferência no dia '+d+'/'+m+'/'+y}return t+'.'}
+function upd(){$('#prev').textContent='Sua mensagem: “'+msg()+'”'}upd();
+$('#send').onclick=()=>window.open('https://wa.me/{{ whatsapp }}?text='+encodeURIComponent(msg()),'_blank','noopener');
+$('#bg').onclick=()=>$('nav').classList.toggle('open');document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>$('nav').classList.remove('open')));
+const lk=[...document.querySelectorAll('.links a[href^="#"]:not(.btn)')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)lk.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>so.observe(s));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
